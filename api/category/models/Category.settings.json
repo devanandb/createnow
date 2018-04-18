@@ -1,0 +1,49 @@
+{
+  "connection": "default",
+  "collectionName": "",
+  "info": {
+    "name": "category",
+    "description": "Broad classification of producs"
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "Name": {
+      "multiple": false,
+      "unique": true,
+      "type": "string",
+      "required": true
+    },
+    "Slug": {
+      "multiple": false,
+      "unique": true,
+      "type": "string",
+      "required": true
+    },
+    "Description": {
+      "multiple": false,
+      "minLength": 200,
+      "type": "text",
+      "required": true
+    },
+    "Image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "Popular": {
+      "multiple": false,
+      "type": "boolean"
+    },
+    "Published": {
+      "default": true,
+      "multiple": false,
+      "type": "boolean"
+    },
+    "products": {
+      "collection": "product",
+      "via": "category"
+    }
+  }
+}
