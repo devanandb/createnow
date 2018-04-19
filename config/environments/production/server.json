@@ -1,5 +1,5 @@
 {
-  "host": "159.89.152.77",
+  "host": "createnow.xyz",
   "port": "${process.env.PORT || 1337}",
   "autoReload": {
     "enabled": false
