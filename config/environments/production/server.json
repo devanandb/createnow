@@ -6,8 +6,5 @@
   },
   "cron": {
     "enabled": false
-  },
-  "admin": {
-    "path": "/dashboard" // We highly recommend to change the default `/admin` path for security reasons.
   }
 }
